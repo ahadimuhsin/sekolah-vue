@@ -11,8 +11,8 @@
             <div v-if="sliders.length > 0">
                 <div class="carousel-item" v-for="(slider,id) in sliders"
                 :class="{active: id==0}" :key="slider.id">
-                    <img :src="slider.image" alt="Foto Slider" class="w-100"
-                    style="height:400px; object-fit: cover">
+                    <img :src="slider.foto" alt="Foto Slider" class="w-100"
+                    style="height:400px; object-fit:cover">
                 </div>
             </div>
             <!-- Jika tidak ada, tampilkan Content Loader -->
@@ -53,7 +53,7 @@ export default {
         }
     },
     created(){
-        axios.get('/api/slider')
+        axios.get('/slider')
         .then(response => {
             this.sliders = response.data.data.data;
         });

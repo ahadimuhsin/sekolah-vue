@@ -4,7 +4,7 @@ Vue.use(VueRouter)
 
 import axios from 'axios'
 
-axios.defaults.baseURL = "http://sekolah-laravel.test/"
+axios.defaults.baseURL = "http://sekolah-laravel.test/api/"
 
 const router = new VueRouter({
     routes: [{

@@ -58,7 +58,7 @@ export default {
         }
     },
     created(){
-        axios.get('/api/tag')
+        axios.get('/tag')
         .then(response => {
             this.tags = response.data.data.data
         });
