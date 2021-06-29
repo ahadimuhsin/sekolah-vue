@@ -207,8 +207,6 @@ import Slider from '@/components/Slider'
 import Footer from '@/components/Footer'
 
 import axios from 'axios'
-import moment from 'moment'
-moment.locale('id')
 export default {
     name: 'home',
     data(){
@@ -266,18 +264,5 @@ export default {
             this.videos = response.data.data
         });
     },
-    methods: {
-        format_date(date){
-            
-            if(date){
-                return moment(String(date)).format('dddd')+", "+moment(String(date)).format('LL')
-            }
-        },
-        format_time(timestamp){
-            if(timestamp){
-                return moment(String(timestamp)).format('dddd')+", "+moment(String(timestamp)).format('LL')+" "+moment(String(timestamp)).format('h:mm:ss')
-            }
-        }
-    }
 }
 </script>

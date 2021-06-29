@@ -34,7 +34,7 @@
                     </li>
                     <li class="nav-item">
                         <router-link class="nav-link" :to="{name: 'contact'}">
-                            <i class="fa fa-phone" aria-hidden="true"></i> 
+                            <i class="fa fa-phone" aria-hidden="true"></i> KONTAK
                             
                         </router-link>
                     </li>
